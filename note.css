@@ -1,10 +1,99 @@
-#musicstaff{
+.musicstaff{
+    float: left;
     position: relative;
-
 }
 
-#note {
+.staff{
+    position: relative;
+}
+#cnote {
     position: absolute;
-    left: 50px;
-    top: 50px;
+    top: 80px;
+    right: 520px;
 }
+#ccnote {
+    position: absolute;
+    top: 80px;
+    right: 475px;
+}
+#csharp {
+    position: absolute;
+    top: 160px;
+    right: 505px;
+}
+#dnote {
+    position: absolute;
+    top: 62px;
+    right: 430px;
+}
+#ddnote {
+    position: absolute;
+    top: 62px;
+    right: 385px;
+}
+#dsharp {
+    position: absolute;
+    top: 140px;
+    right: 415px;
+}
+#enote {
+    position: absolute;
+    top: 53px;
+    right: 340px;
+}
+#fnote {
+    position: absolute;
+    top: 35px;
+    right: 295px;
+}
+#ffnote {
+    position: absolute;
+    top: 35px;
+    right: 250px;
+}
+#fsharp {
+    position: absolute;
+    top: 115px;
+    right: 280px;
+}
+#gnote {
+    position: absolute;
+    top: 20px;
+    right: 205px;
+}
+#ggnote {
+    position: absolute;
+    top: 20px;
+    right: 160px;
+}
+#gsharp {
+    position: absolute;
+    top: 95px;
+    right: 188px;
+}
+#anote {
+    position: absolute;
+    top: 2px;
+    right: 115px;
+}
+#aanote {
+    position: absolute;
+    top: 2px;
+    right: 70px;
+}
+#asharp {
+    position: absolute;
+    top: 78px;
+    right: 100px;
+}
+#bnote {
+    position: absolute;
+    top: -15px;
+    right: 25px;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+

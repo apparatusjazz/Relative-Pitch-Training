@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <body>    
-        <style src = "note.css"></style>
+    
+    <link href="note.css" rel="stylesheet" type="text/css" />
 
-        <p>Press Reference Note, plays reference note. Press Play Note. Choose matching note button.</p>
+    <body>    
+        
+
+        <p>Press Reference Note, then press Play Note. Choose matching note button.</p>
 
         <p id = 'reference note'>Reference note: C</p>
         <p id = 'score'>Score: 0</p>
@@ -12,24 +15,43 @@
         <button onclick="reference_note()" type="button">Reference Note</button>
         <button onclick="play_note()" type="button">Play Note</button>
 
-        <div id = "musicstaff">
-            <img id = "staff" src="Music Staff Blank.png" alt="Music Staff">
-            <img id = "note" src="Basic Note.png" alt="Music Note">
+        <div class = "musicstaff">
+            <img class = "staff" src="Music Staff Blank.png" alt="Music Staff">
+            <input type = "image" id = "cnote" src="Basic Note.png" onclick="checkNote(4)">
+            <input type = "image" id = "ccnote" src="Basic Note.png" onclick="checkNote(5)">
+            <input type = "image" id = "dnote" src="Basic Note.png" onclick="checkNote(6)">
+            <input type = "image" id = "ddnote" src="Basic Note.png" onclick="checkNote(7)">
+            <input type = "image" id = "enote" src="Basic Note.png" onclick="checkNote(8)">
+            <input type = "image" id = "fnote" src="Basic Note.png" onclick="checkNote(9)">
+            <input type = "image" id = "ffnote" src="Basic Note.png" onclick="checkNote(10)">
+            <input type = "image" id = "gnote" src="Basic Note.png" onclick="checkNote(11)">
+            <input type = "image" id = "ggnote" src="Basic Note.png" onclick="checkNote(12)">
+            <input type = "image" id = "anote" src="Basic Note.png" onclick="checkNote(1)">
+            <input type = "image" id = "aanote" src="Basic Note.png" onclick="checkNote(2)">
+            <input type = "image" id = "bnote" src="Basic Note.png" onclick="checkNote(3)">
+            <img id = "csharp" src = "sharp.png" alt = "csharp">
+            <img id = "dsharp" src = "sharp.png" alt = "dsharp">
+            <img id = "fsharp" src = "sharp.png" alt = "fsharp">
+            <img id = "gsharp" src = "sharp.png" alt = "gsharp">
+            <img id = "asharp" src = "sharp.png" alt = "asharp">
         </div>
         
-
-        <button class = 'note' onclick = 'checkNote(4)' type = 'button'>C</button>
-        <button class = 'note' onclick = 'checkNote(5)' type = 'button'>C#/Db</button>
-        <button class = 'note' onclick = 'checkNote(6)' type = 'button'>D</button>
-        <button class = 'note' onclick = 'checkNote(7)' type = 'button'>D#/Eb</button>
-        <button class = 'note' onclick = 'checkNote(8)' type = 'button'>E</button>
-        <button class = 'note' onclick = 'checkNote(9)' type = 'button'>F</button>
-        <button class = 'note' onclick = 'checkNote(10)' type = 'button'>F#</button>
-        <button class = 'note' onclick = 'checkNote(11)' type = 'button'>G</button>
-        <button class = 'note' onclick = 'checkNote(12)' type = 'button'>G#/Ab</button>
-        <button class = 'note' onclick = 'checkNote(1)' type = 'button'>A</button>
-        <button class = 'note' onclick = 'checkNote(2)' type = 'button'>A#/Bb</button>
-        <button class = 'note' onclick = 'checkNote(3)' type = 'button'>B</button>
+        <!--
+        <div class = 'note_buttons'>
+            <button class = 'note' onclick = 'checkNote(4)' type = 'button'>C</button>
+            <button class = 'note' onclick = 'checkNote(5)' type = 'button'>C#/Db</button>
+            <button class = 'note' onclick = 'checkNote(6)' type = 'button'>D</button>
+            <button class = 'note' onclick = 'checkNote(7)' type = 'button'>D#/Eb</button>
+            <button class = 'note' onclick = 'checkNote(8)' type = 'button'>E</button>
+            <button class = 'note' onclick = 'checkNote(9)' type = 'button'>F</button>
+            <button class = 'note' onclick = 'checkNote(10)' type = 'button'>F#</button>
+            <button class = 'note' onclick = 'checkNote(11)' type = 'button'>G</button>
+            <button class = 'note' onclick = 'checkNote(12)' type = 'button'>G#/Ab</button>
+            <button class = 'note' onclick = 'checkNote(1)' type = 'button'>A</button>
+            <button class = 'note' onclick = 'checkNote(2)' type = 'button'>A#/Bb</button>
+            <button class = 'note' onclick = 'checkNote(3)' type = 'button'>B</button>
+        </div>
+        -->
 
         <script src = "notemain.js"></script>
     </body>
