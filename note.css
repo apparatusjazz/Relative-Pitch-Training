@@ -1,0 +1,10 @@
+#musicstaff{
+    position: relative;
+
+}
+
+#note {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}

@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
-<body>    
-    <audio id = "C" controls>
-        <source src = "c.wav" type = "audio/wav">
-    </audio>
+    <body>    
+        <style src = "note.css"></style>
 
-    <p>Click the buttons to play or pause the audio.</p>
+        <p>Press Reference Note, plays reference note. Press Play Note. Choose matching note button.</p>
 
-    <button onclick="playAudio()" type="button">Play Audio</button>
-    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+        <p id = 'reference note'>Reference note: C</p>
+        <p id = 'score'>Score: 0</p>
+        <p id = 'wrong'>Wrong: 0</p>
 
-    <script src = "notemain.js"></script>
-</body>
+        <button onclick="reference_note()" type="button">Reference Note</button>
+        <button onclick="play_note()" type="button">Play Note</button>
+
+        <div id = "musicstaff">
+            <img id = "staff" src="Music Staff Blank.png" alt="Music Staff">
+            <img id = "note" src="Basic Note.png" alt="Music Note">
+        </div>
+        
+
+        <button class = 'note' onclick = 'checkNote(4)' type = 'button'>C</button>
+        <button class = 'note' onclick = 'checkNote(5)' type = 'button'>C#/Db</button>
+        <button class = 'note' onclick = 'checkNote(6)' type = 'button'>D</button>
+        <button class = 'note' onclick = 'checkNote(7)' type = 'button'>D#/Eb</button>
+        <button class = 'note' onclick = 'checkNote(8)' type = 'button'>E</button>
+        <button class = 'note' onclick = 'checkNote(9)' type = 'button'>F</button>
+        <button class = 'note' onclick = 'checkNote(10)' type = 'button'>F#</button>
+        <button class = 'note' onclick = 'checkNote(11)' type = 'button'>G</button>
+        <button class = 'note' onclick = 'checkNote(12)' type = 'button'>G#/Ab</button>
+        <button class = 'note' onclick = 'checkNote(1)' type = 'button'>A</button>
+        <button class = 'note' onclick = 'checkNote(2)' type = 'button'>A#/Bb</button>
+        <button class = 'note' onclick = 'checkNote(3)' type = 'button'>B</button>
+
+        <script src = "notemain.js"></script>
+    </body>
 </html>
