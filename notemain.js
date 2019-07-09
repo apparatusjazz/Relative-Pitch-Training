@@ -1,16 +1,16 @@
 
-var a = new Audio('a.wav');
-var asharp = new Audio('aa.wav');
-var b = new Audio('b.wav');
-var c = new Audio('c.wav');
-var csharp = new Audio('cc.wav');
-var d = new Audio('d.wav');
-var dsharp = new Audio('dd.wav');
-var e =  new Audio('e.wav');
-var f = new Audio('f.wav');
-var fsharp = new Audio('ff.wav');
-var g = new Audio('g.wav');
-var gsharp = new Audio('gg.wav');
+var a = new Audio('Notes/A2.wav');
+var asharp = new Audio('Notes/Bb2.wav');
+var b = new Audio('Notes/B2.wav');
+var c = new Audio('Notes/C.wav');
+var csharp = new Audio('Notes/Db.wav');
+var d = new Audio('Notes/D.wav');
+var dsharp = new Audio('Notes/Eb.wav');
+var e =  new Audio('Notes/E.wav');
+var f = new Audio('Notes/F.wav');
+var fsharp = new Audio('Notes/Gb.wav');
+var g = new Audio('Notes/G.wav');
+var gsharp = new Audio('Notes/Ab.wav');
 
 var score = 0;
 var wrong = 0;    //Number of wrong notes

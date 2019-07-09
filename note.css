@@ -3,95 +3,79 @@
     position: relative;
 }
 
-.staff{
-    position: relative;
-}
 #cnote {
     position: absolute;
-    top: 80px;
-    right: 520px;
+    top: 375px;
+    right: 1175px;
 }
 #ccnote {
     position: absolute;
-    top: 80px;
-    right: 475px;
+    top: 350px;
+    right: 1110px;
 }
-#csharp {
-    position: absolute;
-    top: 160px;
-    right: 505px;
-}
+
 #dnote {
     position: absolute;
-    top: 62px;
-    right: 430px;
+    top: 350px;
+    right: 1050px;
 }
 #ddnote {
     position: absolute;
-    top: 62px;
-    right: 385px;
+    top: 325px;
+    right: 980px;
 }
-#dsharp {
-    position: absolute;
-    top: 140px;
-    right: 415px;
-}
+
 #enote {
     position: absolute;
-    top: 53px;
-    right: 340px;
+    top: 330px;
+    right: 920px;
 }
 #fnote {
     position: absolute;
-    top: 35px;
-    right: 295px;
+    top: 320px;
+    right: 850px;
 }
 #ffnote {
     position: absolute;
-    top: 35px;
-    right: 250px;
+    top: 300px;
+    right: 770px;
 }
-#fsharp {
-    position: absolute;
-    top: 115px;
-    right: 280px;
-}
+
 #gnote {
     position: absolute;
-    top: 20px;
-    right: 205px;
+    top: 300px;
+    right: 700px;
 }
 #ggnote {
     position: absolute;
-    top: 20px;
-    right: 160px;
+    top: 280px;
+    right: 630px;
 }
-#gsharp {
-    position: absolute;
-    top: 95px;
-    right: 188px;
-}
+
 #anote {
     position: absolute;
-    top: 2px;
-    right: 115px;
+    top: 280px;
+    right: 560px;
 }
 #aanote {
     position: absolute;
-    top: 2px;
-    right: 70px;
-}
-#asharp {
-    position: absolute;
-    top: 78px;
-    right: 100px;
-}
-#bnote {
-    position: absolute;
-    top: -15px;
-    right: 25px;
+    top: 330px;
+    right: 480px;
 }
 
+#bnote {
+    position: absolute;
+    top: 330px;
+    right: 410px;
+}
+.noteButtons {
+    opacity: 0;
+}
+.reference {
+    position: absolute;
+    top: 20%;
+    right: 80%;
+}
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
