@@ -15,6 +15,9 @@ var gsharp = new Audio('Notes/Ab.wav');
 var score = 0;
 var wrong = 0;    //Number of wrong notes
 var randomNote;
+var noteStorage = [];
+var notesSequence = [];
+
 
 var notes = {
   'a': a, 'a#': asharp, 'b': b, 'c': c, 'c#': csharp, 'd': d, 
@@ -38,6 +41,38 @@ function getRandomNote() {
 
 note_to_play = getRandomNote();
 
+
+
+var noteList = [];
+
+function getNoteList() {
+
+  var noteList = [];
+  
+  numberNotes = document.getElementById('number_notes').value;
+  for(i = 0; i < numberNotes; i ++) {
+    var randomN = getRandomNote()
+    noteList.push(randomN);
+    notesSequence.push(randomN);
+  }
+ 
+  return noteList;
+}
+
+
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function playNotes(noteList) {
+  
+  for (i = 0; i < noteList.length; i ++) {
+    notes[note_indexes[noteList[i]]].play();
+    await sleep(700);
+  }
+}
+
 function play_note() {
   notes[note_indexes[note_to_play]].play();
 }
@@ -55,6 +90,33 @@ function checkNote(index) {
     setTimeout(displayScore, 1500);
   }
   note_to_play = getRandomNote();
+}
+
+
+function storeNote(note) {
+  noteStorage.push(note);
+  if (noteStorage.length >= numberNotes) {
+    checkMultiple(noteStorage);
+    noteStorage = [];
+    notesSequence = [];
+  }
+}
+
+function checkMultiple(noteStorage) {
+  for(i = 0; i < noteStorage.length; i ++) {
+    if(noteStorage[i] != notesSequence[i]) {
+      //document.getElementById('score').innerHTML = noteList[i].toString();
+      wrong += 1;
+      displayWrong();
+      wrongNote();
+      setTimeout(displayScore, 1500);
+      return;
+    }
+  }
+  score += 1;
+  correctNote();
+  setTimeout(displayScore, 1500);
+
 }
 
 function correctNote(){

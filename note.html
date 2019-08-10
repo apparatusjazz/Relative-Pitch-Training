@@ -12,9 +12,24 @@
         <p id = 'score'>Score: 0</p>
         <p id = 'wrong'>Wrong: 0</p>
 
+        <div id="myDropdown">
+            <select id = 'number_notes'>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5</option>
+                <option value = "6">6</option>
+                <option value = "7">7</option>
+                <option value = "8">8</option>
+                <option value = "9">9</option>
+                <option value = "10">10</option>
+            </select>
+        </div>
+
         <div class = "reference">
             <button onclick="reference_note()" type="button">Reference Note</button>
-            <button onclick="play_note()" type="button">Play Note</button>
+            <button onclick="playNotes(getNoteList())" type="button">Play Note</button>
         </div>
             
         <div class = "musicstaff">
@@ -22,18 +37,18 @@
         </div>
 
         <div class = "noteButtons">
-            <input type = "image" id = "cnote" src="DesignElements/Basic Note.png" onclick="checkNote(4)">
-            <input type = "image" id = "ccnote" src="DesignElements/Basic Note.png" onclick="checkNote(5)">
-            <input type = "image" id = "dnote" src="DesignElements/Basic Note.png" onclick="checkNote(6)">
-            <input type = "image" id = "ddnote" src="DesignElements/Basic Note.png" onclick="checkNote(7)">
-            <input type = "image" id = "enote" src="DesignElements/Basic Note.png" onclick="checkNote(8)">
-            <input type = "image" id = "fnote" src="DesignElements/Basic Note.png" onclick="checkNote(9)">
-            <input type = "image" id = "ffnote" src="DesignElements/Basic Note.png" onclick="checkNote(10)">
-            <input type = "image" id = "gnote" src="DesignElements/Basic Note.png" onclick="checkNote(11)">
-            <input type = "image" id = "ggnote" src="DesignElements/Basic Note.png" onclick="checkNote(12)">
-            <input type = "image" id = "anote" src="DesignElements/Basic Note.png" onclick="checkNote(1)">
-            <input type = "image" id = "aanote" src="DesignElements/Basic Note.png" onclick="checkNote(2)">
-            <input type = "image" id = "bnote" src="DesignElements/Basic Note.png" onclick="checkNote(3)">
+            <input type = "image" id = "cnote" src="DesignElements/Basic Note.png" onclick="storeNote(4)">
+            <input type = "image" id = "ccnote" src="DesignElements/Basic Note.png" onclick="storeNote(5)">
+            <input type = "image" id = "dnote" src="DesignElements/Basic Note.png" onclick="storeNote(6)">
+            <input type = "image" id = "ddnote" src="DesignElements/Basic Note.png" onclick="storeNote(7)">
+            <input type = "image" id = "enote" src="DesignElements/Basic Note.png" onclick="storeNote(8)">
+            <input type = "image" id = "fnote" src="DesignElements/Basic Note.png" onclick="storeNote(9)">
+            <input type = "image" id = "ffnote" src="DesignElements/Basic Note.png" onclick="storeNote(10)">
+            <input type = "image" id = "gnote" src="DesignElements/Basic Note.png" onclick="storeNote(11)">
+            <input type = "image" id = "ggnote" src="DesignElements/Basic Note.png" onclick="storeNote(12)">
+            <input type = "image" id = "anote" src="DesignElements/Basic Note.png" onclick="storeNote(1)">
+            <input type = "image" id = "aanote" src="DesignElements/Basic Note.png" onclick="storeNote(2)">
+            <input type = "image" id = "bnote" src="DesignElements/Basic Note.png" onclick="storeNote(3)">
         </div>
 
         <script src = "notemain.js"></script>
