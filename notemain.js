@@ -39,9 +39,6 @@ function getRandomNote() {
   return randomNote;
 }
 
-note_to_play = getRandomNote();
-
-
 
 var noteList = [];
 
@@ -69,13 +66,11 @@ async function playNotes(noteList) {
   
   for (i = 0; i < noteList.length; i ++) {
     notes[note_indexes[noteList[i]]].play();
-    await sleep(700);
+    await sleep(1000);
+    notes[note_indexes[noteList[i]]].load();
   }
 }
 
-function play_note() {
-  notes[note_indexes[note_to_play]].play();
-}
 
 function checkNote(index) {
   if(index == randomNote){
