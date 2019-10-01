@@ -5,4 +5,4 @@ A music relative pitch game. A reference note is played and the user must guess 
 -The number of notes played can be changed ranging from 1 - 10
 -Number of correct and wrong tries are tracked
 
-![Screenshot](github.com/apparatusjazz/Relative-Pitch-Training/DesignElements/RelativePitchScreen.PNG)
+![Screenshot](https://github.com/apparatusjazz/Relative-Pitch-Training/blob/master/DesignElements/RelativePitchScreen.PNG?raw=true)
